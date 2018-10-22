@@ -1,9 +1,21 @@
+﻿﻿<!DOCTYPE html>
 <html>
-    <head>
-        <title>Rescue Service | CanCodeForFood</title>
-        <link rel="stylesheet" type="text/css" href="./style.css">
-    </head>
-    <body>
-        <h1></h1>
-    </body>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script type='text/javascript'>
+    var map;
+    function GetMap()
+    {
+        map = new Microsoft.Maps.Map('#myMap', {
+            center: new Microsoft.Maps.Location(39, -92),
+            zoom: 5
+        });
+    }
+    </script>
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=Ai9COQEncpInSSx-GhqT5xbYEKioaPRSr_Ce6_NL4232V9FQ9fxSxRwnv6-HRHmE' async defer></script>
+</head>
+<body>
+    <div id="myMap" style="position:relative;width:800px;height:600px;"></div>
+</body>
 </html>
